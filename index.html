@@ -29,7 +29,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://damacol.shop/">
 <meta property="og:title" content="Damacolshop - Game Accounts, Currencies & Codes">
-<meta property="og:description" content="Buy game accounts, currencies and codes for 100+ MMORPGs. Instant delivery, trusted seller on EpicNPC, g2g, PlayerAuctions, Trustpilot, Elitepvpers and Sythe.">
+<meta property="og:description" content="Buy game accounts, currencies and codes for 100+ MMORPGs. Instant delivery, trusted seller on EpicNPC, Trustpilot, Elitepvpers and Sythe.">
 <meta property="og:image" content="https://damacol.shop/og-image.jpg">
 <meta property="og:site_name" content="Damacolshop">
 <meta property="og:locale" content="en_US">
@@ -97,7 +97,7 @@
       "name": "Is it safe to buy game accounts from Damacolshop?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We are verified sellers on EpicNPC, g2g, PlayerAuctions, Trustpilot, Elitepvpers and Sythe. All transactions include a 30-day replacement guarantee."
+        "text": "Yes. We are verified sellers on EpicNPC, Trustpilot, Elitepvpers and Sythe. All transactions include a 24-hour replacement guarantee."
       }
     },
     {
@@ -457,7 +457,6 @@
     font-size: 0.9rem;
   }
 
-  /* No results card styling */
   .no-results-card {
     background: linear-gradient(145deg, rgba(20,20,20,0.95), rgba(10,10,10,0.95));
     border: 2px solid #ff6b1a;
@@ -604,7 +603,6 @@
 
     <div id="suggestionsDropdown" class="suggestions-dropdown rounded-xl hidden absolute left-1/2 -translate-x-1/2 w-full max-w-3xl z-40"></div>
 
-    <!-- Info text below search -->
     <div class="text-center mt-12">
       <div class="inline-block bg-black/60 border border-orange-900/50 rounded-lg px-8 py-6 max-w-2xl">
         <h3 class="font-cinzel text-xl font-bold text-gold mb-3" data-i18n="info_title">ALL GAMES AVAILABLE</h3>
@@ -794,7 +792,7 @@ const translations = {
     footer_refunds: "Refunds", footer_rights: "All rights reserved.",
     modal_what_included: "What's included?",
     modal_delivery: "Instant delivery (5 min)",
-    modal_guarantee: "30-day replacement guarantee",
+    modal_guarantee: "24-hour replacement guarantee",
     modal_support: "24/7 Discord support",
     modal_payment: "Secure payment method",
     modal_contact_buy: "CONTACT TO BUY",
@@ -836,7 +834,7 @@ const translations = {
     footer_refunds: "Reembolsos", footer_rights: "Todos los derechos reservados.",
     modal_what_included: "¿Qué incluye?",
     modal_delivery: "Entrega instantánea (5 min)",
-    modal_guarantee: "Garantía de reemplazo 30 días",
+    modal_guarantee: "Garantía de reemplazo 24 horas",
     modal_support: "Soporte Discord 24/7",
     modal_payment: "Método de pago seguro",
     modal_contact_buy: "CONTACTAR PARA COMPRAR",
@@ -868,8 +866,16 @@ const infoContent = {
         {
           title: "Security & Trust",
           items: [
-            { q: "Is it safe to buy from Damacolshop?", a: "Yes. We are verified sellers on EpicNPC, g2g, PlayerAuctions, Trustpilot, Elitepvpers and Sythe with over 50,000 satisfied customers." },
-            { q: "Do you offer any guarantee?", a: "All purchases include a 30-day replacement guarantee. If there is any issue with your product, we will replace it free of charge." }
+            { q: "Is it safe to buy from Damacolshop?", a: "Yes. We are verified sellers on EpicNPC, Trustpilot, Elitepvpers and Sythe with over 50 satisfied customers." },
+            { q: "Do you offer any guarantee?", a: "All purchases include a 24-hour replacement guarantee. Since our products are digital and delivered instantly, we recommend testing them immediately upon receipt. If there is any issue, contact us within 24 hours and we will replace it free of charge." }
+          ]
+        },
+        {
+          title: "Guarantee & Refunds",
+          items: [
+            { q: "How does the 24-hour guarantee work?", a: "Once you receive your product, you have 24 hours to test it. If the account, currency or code does not work as described, contact us on Discord within that window and we will replace it or refund your purchase." },
+            { q: "Why only 24 hours?", a: "Because our products are digital goods (accounts, in-game currencies, codes) that can be verified immediately upon delivery. This policy protects both buyers and sellers." },
+            { q: "What happens after 24 hours?", a: "After the 24-hour window, the sale is considered final. Please make sure to test your product as soon as you receive it." }
           ]
         },
         {
@@ -905,7 +911,11 @@ const infoContent = {
           <p>We accept PayPal, cryptocurrency (Bitcoin, Ethereum, USDT), credit/debit cards and other regional payment methods. All transactions are processed securely.</p>
         </div>
         <div class="info-section">
-          <h4>5. Contact</h4>
+          <h4>5. 24-Hour Guarantee</h4>
+          <p>All purchases include a 24-hour replacement guarantee. Since our products are digital goods delivered instantly, you must test them immediately upon receipt. If there is any issue, contact us on Discord within 24 hours of delivery for a free replacement or refund. After 24 hours, the sale is considered final.</p>
+        </div>
+        <div class="info-section">
+          <h4>6. Contact</h4>
           <p>For any questions or issues, contact us on Discord: <strong>damacol</strong> or join our server at <a href="https://discord.gg/fJj2DYk27t" target="_blank">discord.gg/fJj2DYk27t</a>. We are available 24/7.</p>
         </div>
       `
@@ -941,17 +951,22 @@ const infoContent = {
       `
     },
     refunds: {
-      title: "Refund Policy",
+      title: "Refund & Guarantee Policy",
       content: `
         <div class="info-section">
-          <h4>30-Day Replacement Guarantee</h4>
-          <p>All purchases include a 30-day replacement guarantee. If you experience any issues with your product within 30 days of purchase, we will replace it free of charge or provide a full refund.</p>
+          <h4>24-Hour Replacement Guarantee</h4>
+          <p>All purchases include a 24-hour replacement guarantee. Since our products are digital goods (accounts, in-game currencies, codes) delivered instantly, you must test them immediately upon receipt. If there is any issue within 24 hours of delivery, we will replace the product free of charge or provide a full refund.</p>
         </div>
         <div class="info-section">
-          <h4>When You Can Request a Refund</h4>
+          <h4>Why 24 Hours?</h4>
+          <p>Unlike physical products, digital goods can be verified immediately. Accounts can be logged into, currencies can be checked in-game, and codes can be redeemed instantly. This allows us to resolve any issues quickly and fairly for both buyers and sellers.</p>
+        </div>
+        <div class="info-section">
+          <h4>When You Can Request a Refund or Replacement</h4>
           <ul>
             <li>The product was not delivered as described</li>
-            <li>The account or currency was recovered or banned within 30 days</li>
+            <li>The account or currency was recovered or banned within 24 hours of delivery</li>
+            <li>The code or key was already used or invalid</li>
             <li>Technical issues prevented you from using the product</li>
             <li>Duplicate purchase (accidental double payment)</li>
           </ul>
@@ -959,14 +974,19 @@ const infoContent = {
         <div class="info-section">
           <h4>When Refunds Are Not Available</h4>
           <ul>
-            <li>After 30 days from the purchase date</li>
+            <li>After 24 hours from the delivery time</li>
             <li>If you violated the game's Terms of Service after purchase</li>
             <li>If you shared account credentials with third parties</li>
+            <li>If you changed your mind after the 24-hour window</li>
           </ul>
         </div>
         <div class="info-section">
           <h4>How to Request a Refund</h4>
-          <p>Contact us on Discord at <strong>damacol</strong> with your order details. We process refund requests within 24-48 hours.</p>
+          <p>Contact us on Discord at <strong>damacol</strong> with your order details and proof of the issue (screenshots, videos). We process refund and replacement requests within 2-6 hours during our operating hours.</p>
+        </div>
+        <div class="info-section">
+          <h4>Important Reminder</h4>
+          <p><strong>Always test your product immediately upon delivery.</strong> Log into the account, check the currency balance, or redeem the code right away. The 24-hour window starts from the moment of delivery, not from when you first use the product.</p>
         </div>
       `
     },
@@ -988,7 +1008,7 @@ const infoContent = {
         </div>
         <div class="info-section">
           <h4>How to Buy</h4>
-          <p>Search for your game, then contact us on Discord to get the best price. We accept PayPal, Crypto, Credit Cards and more. All accounts include a 30-day replacement guarantee.</p>
+          <p>Search for your game, then contact us on Discord to get the best price. We accept PayPal, Crypto, Credit Cards and more. All accounts include a 24-hour replacement guarantee.</p>
         </div>
       `
     },
@@ -1041,7 +1061,7 @@ const infoContent = {
         </div>
         <div class="info-section">
           <h4>Instant Delivery</h4>
-          <p>All codes are delivered instantly via Discord after payment confirmation. Codes are region-specific - please specify your region when ordering.</p>
+          <p>All codes are delivered instantly via Discord after payment confirmation. Codes are region-specific - please specify your region when ordering. Test your code immediately upon receipt - our 24-hour guarantee applies.</p>
         </div>
       `
     },
@@ -1083,8 +1103,16 @@ const infoContent = {
         {
           title: "Seguridad y Confianza",
           items: [
-            { q: "¿Es seguro comprar en Damacolshop?", a: "Sí. Somos vendedores verificados en EpicNPC, g2g, PlayerAuctions, Trustpilot, Elitepvpers y Sythe con más de 50,000 clientes satisfechos." },
-            { q: "¿Ofrecen alguna garantía?", a: "Todas las compras incluyen garantía de reemplazo de 30 días. Si hay algún problema con tu producto, lo reemplazamos sin costo." }
+            { q: "¿Es seguro comprar en Damacolshop?", a: "Sí. Somos vendedores verificados en EpicNPC, Trustpilot, Elitepvpers y Sythe con más de 50 clientes satisfechos." },
+            { q: "¿Ofrecen alguna garantía?", a: "Todas las compras incluyen garantía de reemplazo de 24 horas. Como nuestros productos son digitales y se entregan al instante, recomendamos probarlos inmediatamente al recibirlos. Si hay algún problema, contáctanos dentro de las 24 horas y lo reemplazamos sin costo." }
+          ]
+        },
+        {
+          title: "Garantía y Reembolsos",
+          items: [
+            { q: "¿Cómo funciona la garantía de 24 horas?", a: "Una vez que recibes tu producto, tienes 24 horas para probarlo. Si la cuenta, moneda o código no funciona como se describió, contáctanos en Discord dentro de ese plazo y lo reemplazamos o te reembolsamos la compra." },
+            { q: "¿Por qué solo 24 horas?", a: "Porque nuestros productos son bienes digitales (cuentas, monedas del juego, códigos) que pueden verificarse inmediatamente al entregarse. Esta política protege tanto a compradores como a vendedores." },
+            { q: "¿Qué pasa después de 24 horas?", a: "Después del plazo de 24 horas, la venta se considera final. Por favor asegúrate de probar tu producto tan pronto como lo recibas." }
           ]
         },
         {
@@ -1120,7 +1148,11 @@ const infoContent = {
           <p>Aceptamos PayPal, criptomonedas (Bitcoin, Ethereum, USDT), tarjetas de crédito/débito y otros métodos de pago regionales. Todas las transacciones se procesan de forma segura.</p>
         </div>
         <div class="info-section">
-          <h4>5. Contacto</h4>
+          <h4>5. Garantía de 24 Horas</h4>
+          <p>Todas las compras incluyen garantía de reemplazo de 24 horas. Como nuestros productos son bienes digitales entregados al instante, debes probarlos inmediatamente al recibirlos. Si hay algún problema, contáctanos en Discord dentro de las 24 horas posteriores a la entrega para un reemplazo gratuito o reembolso. Después de 24 horas, la venta se considera final.</p>
+        </div>
+        <div class="info-section">
+          <h4>6. Contacto</h4>
           <p>Para cualquier pregunta o problema, contáctanos en Discord: <strong>damacol</strong> o únete a nuestro servidor en <a href="https://discord.gg/fJj2DYk27t" target="_blank">discord.gg/fJj2DYk27t</a>. Estamos disponibles 24/7.</p>
         </div>
       `
@@ -1156,17 +1188,22 @@ const infoContent = {
       `
     },
     refunds: {
-      title: "Política de Reembolsos",
+      title: "Política de Reembolsos y Garantía",
       content: `
         <div class="info-section">
-          <h4>Garantía de Reemplazo de 30 Días</h4>
-          <p>Todas las compras incluyen garantía de reemplazo de 30 días. Si experimentas algún problema con tu producto dentro de los 30 días posteriores a la compra, lo reemplazaremos sin costo o te daremos un reembolso completo.</p>
+          <h4>Garantía de Reemplazo de 24 Horas</h4>
+          <p>Todas las compras incluyen garantía de reemplazo de 24 horas. Como nuestros productos son bienes digitales (cuentas, monedas del juego, códigos) entregados al instante, debes probarlos inmediatamente al recibirlos. Si hay algún problema dentro de las 24 horas posteriores a la entrega, reemplazaremos el producto sin costo o te daremos un reembolso completo.</p>
         </div>
         <div class="info-section">
-          <h4>Cuándo Puedes Solicitar un Reembolso</h4>
+          <h4>¿Por qué 24 Horas?</h4>
+          <p>A diferencia de los productos físicos, los bienes digitales pueden verificarse inmediatamente. Las cuentas pueden iniciarse sesión, las monedas pueden verificarse en el juego y los códigos pueden canjearse al instante. Esto nos permite resolver cualquier problema de manera rápida y justa tanto para compradores como para vendedores.</p>
+        </div>
+        <div class="info-section">
+          <h4>Cuándo Puedes Solicitar un Reembolso o Reemplazo</h4>
           <ul>
             <li>El producto no fue entregado como se describió</li>
-            <li>La cuenta o moneda fue recuperada o baneada dentro de los 30 días</li>
+            <li>La cuenta o moneda fue recuperada o baneada dentro de las 24 horas de la entrega</li>
+            <li>El código o key ya fue usado o es inválido</li>
             <li>Problemas técnicos impidieron que usaras el producto</li>
             <li>Compra duplicada (pago doble accidental)</li>
           </ul>
@@ -1174,14 +1211,19 @@ const infoContent = {
         <div class="info-section">
           <h4>Cuándo No Hay Reembolsos</h4>
           <ul>
-            <li>Después de 30 días desde la fecha de compra</li>
+            <li>Después de 24 horas desde el momento de la entrega</li>
             <li>Si violaste los Términos de Servicio del juego después de la compra</li>
             <li>Si compartiste credenciales de la cuenta con terceros</li>
+            <li>Si cambiaste de opinión después del plazo de 24 horas</li>
           </ul>
         </div>
         <div class="info-section">
           <h4>Cómo Solicitar un Reembolso</h4>
-          <p>Contáctanos en Discord en <strong>damacol</strong> con los detalles de tu pedido. Procesamos solicitudes de reembolso en 24-48 horas.</p>
+          <p>Contáctanos en Discord en <strong>damacol</strong> con los detalles de tu pedido y prueba del problema (capturas de pantalla, videos). Procesamos solicitudes de reembolso y reemplazo en 2-6 horas durante nuestro horario de operación.</p>
+        </div>
+        <div class="info-section">
+          <h4>Recordatorio Importante</h4>
+          <p><strong>Siempre prueba tu producto inmediatamente al recibirlo.</strong> Inicia sesión en la cuenta, verifica el balance de la moneda o canjea el código de inmediato. El plazo de 24 horas comienza desde el momento de la entrega, no desde cuando usas el producto por primera vez.</p>
         </div>
       `
     },
@@ -1203,7 +1245,7 @@ const infoContent = {
         </div>
         <div class="info-section">
           <h4>Cómo Comprar</h4>
-          <p>Busca tu juego, luego contáctanos en Discord para obtener el mejor precio. Aceptamos PayPal, Crypto, Tarjetas y más. Todas las cuentas incluyen garantía de reemplazo de 30 días.</p>
+          <p>Busca tu juego, luego contáctanos en Discord para obtener el mejor precio. Aceptamos PayPal, Crypto, Tarjetas y más. Todas las cuentas incluyen garantía de reemplazo de 24 horas.</p>
         </div>
       `
     },
@@ -1256,7 +1298,7 @@ const infoContent = {
         </div>
         <div class="info-section">
           <h4>Entrega Instantánea</h4>
-          <p>Todos los códigos se entregan instantáneamente vía Discord después de la confirmación del pago. Los códigos son específicos por región - por favor especifica tu región al ordenar.</p>
+          <p>Todos los códigos se entregan instantáneamente vía Discord después de la confirmación del pago. Los códigos son específicos por región - por favor especifica tu región al ordenar. Prueba tu código inmediatamente al recibirlo - aplica nuestra garantía de 24 horas.</p>
         </div>
       `
     },
@@ -1435,7 +1477,6 @@ searchInput.addEventListener('input', (e) => {
     g.aliases.some(a => a.includes(query))
   );
   if (matches.length === 0) {
-    // Show no results card with Discord links
     suggestionsDropdown.innerHTML = `
       <div class="no-results-card relative rounded-xl p-8 text-center">
         <div class="text-orange-500 font-cinzel text-2xl md:text-3xl font-bold mb-3 tracking-wider">${t('search_no_results')}</div>
