@@ -43,21 +43,41 @@
 
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>">
 
+<!-- ===== ADVANCED SEO: Performance (Core Web Vitals), Sitemap & Verification ===== -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://image.qwenlm.ai" crossorigin>
+<link rel="preload" as="image" fetchpriority="high" href="https://image.qwenlm.ai/public_source/0e3ea7eb-4263-468c-9e29-9db09ee5db1a/187774a83-ed6a-445e-a8ad-b23dcf8287a9.png">
+<link rel="preload" as="image" fetchpriority="high" href="https://image.qwenlm.ai/public_source/0e3ea7eb-4263-468c-9e29-9db09ee5db1a/1b2b0b317-c885-4bff-8ed1-0cf9441d8dc1.png">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://damacol.shop/sitemap.xml">
+<!-- SEO VERIFICATION: pega aquí tus tokens después de registrar el sitio en Google Search Console y Bing Webmaster Tools -->
+<meta name="google-site-verification" content="PASTE_GOOGLE_TOKEN_HERE">
+<meta name="msvalidate.01" content="PASTE_BING_TOKEN_HERE">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "OnlineStore",
+  "@id": "https://damacol.shop/#store",
   "name": "Damacolshop",
   "url": "https://damacol.shop",
   "logo": "https://damacol.shop/logo.png",
   "description": "Marketplace for game accounts, currencies and codes for MMORPGs, FPS, MOBA and more.",
+  "foundingDate": "2020",
+  "slogan": "Game ACC - Currencys",
   "sameAs": [
     "https://discord.gg/fJj2DYk27t",
     "https://discord.com/users/614579018431332378",
     "https://www.epicnpc.com/members/damac0l.2170636/",
-    "https://www.sythe.org/members/damacol.2098650/",
-    "https://www.elitepvpers.com/forum/members/9096042-damac0l.html"
+    "https://www.elitepvpers.com/forum/members/9096042-damac0l.html",
+    "https://www.sythe.org/members/damacol.2098650/"
   ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "bestRating": "5",
+    "ratingCount": "50"
+  },
+  "knowsAbout": ["World of Warcraft gold", "FFXIV gil", "Lineage 2 adena", "Lost Ark gold", "Albion Online silver", "RuneScape GP", "EVE Online ISK", "Genshin Impact accounts", "Diablo IV gold", "Path of Exile divine orbs", "Fortnite OG skins", "Valorant ranked accounts", "League of Legends accounts", "Steam wallet codes", "PSN gift cards", "MMORPG boosting"],
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "customer service",
@@ -70,13 +90,77 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
+  "@type": "Organization",
+  "@id": "https://damacol.shop/#organization",
   "name": "Damacolshop",
   "url": "https://damacol.shop",
+  "logo": "https://damacol.shop/logo.png",
+  "foundingDate": "2020",
+  "slogan": "Game ACC - Currencys",
+  "sameAs": [
+    "https://discord.gg/fJj2DYk27t",
+    "https://discord.com/users/614579018431332378",
+    "https://www.epicnpc.com/members/damac0l.2170636/",
+    "https://www.elitepvpers.com/forum/members/9096042-damac0l.html",
+    "https://www.sythe.org/members/damacol.2098650/"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://damacol.shop/#website",
+  "name": "Damacolshop",
+  "url": "https://damacol.shop",
+  "inLanguage": ["en", "es"],
   "potentialAction": {
     "@type": "SearchAction",
     "target": "https://damacol.shop/?q={search_term_string}",
     "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://damacol.shop/#webpage",
+  "url": "https://damacol.shop/",
+  "name": "Damacolshop - Game Accounts, Currencies & Codes | MMORPG Marketplace",
+  "isPartOf": { "@id": "https://damacol.shop/#website" },
+  "about": { "@id": "https://damacol.shop/#organization" },
+  "datePublished": "2020-01-01",
+  "dateModified": "2026-10-05",
+  "inLanguage": ["en", "es"],
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["#home h1", "#about p"]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Sale of game accounts, in-game currencies, codes, keys and boosting",
+  "provider": { "@id": "https://damacol.shop/#organization" },
+  "areaServed": "Worldwide",
+  "availableLanguage": ["en", "es"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Game Accounts and Currencies",
+    "itemListElement": [
+      {"@type": "OfferCatalog", "name": "MMORPG Accounts"},
+      {"@type": "OfferCatalog", "name": "In-Game Currencies"},
+      {"@type": "OfferCatalog", "name": "Game Codes and Keys"},
+      {"@type": "OfferCatalog", "name": "FPS Accounts"},
+      {"@type": "OfferCatalog", "name": "MOBA Accounts"},
+      {"@type": "OfferCatalog", "name": "Boosting Services"}
+    ]
   }
 }
 </script>
@@ -110,6 +194,127 @@
         "text": "We accept PayPal, crypto, credit cards and more. Contact us on Discord to discuss the best payment option for your region."
       }
     }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Games supported by Damacolshop",
+  "numberOfItems": 110,
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"World of Warcraft"},
+    {"@type":"ListItem","position":2,"name":"Final Fantasy XIV"},
+    {"@type":"ListItem","position":3,"name":"Lineage 2"},
+    {"@type":"ListItem","position":4,"name":"Lost Ark"},
+    {"@type":"ListItem","position":5,"name":"Black Desert Online"},
+    {"@type":"ListItem","position":6,"name":"Guild Wars 2"},
+    {"@type":"ListItem","position":7,"name":"Elder Scrolls Online"},
+    {"@type":"ListItem","position":8,"name":"Star Wars TOR"},
+    {"@type":"ListItem","position":9,"name":"Albion Online"},
+    {"@type":"ListItem","position":10,"name":"RuneScape"},
+    {"@type":"ListItem","position":11,"name":"New World"},
+    {"@type":"ListItem","position":12,"name":"Throne and Liberty"},
+    {"@type":"ListItem","position":13,"name":"Tower of Fantasy"},
+    {"@type":"ListItem","position":14,"name":"Genshin Impact"},
+    {"@type":"ListItem","position":15,"name":"Honkai Star Rail"},
+    {"@type":"ListItem","position":16,"name":"Wuthering Waves"},
+    {"@type":"ListItem","position":17,"name":"Diablo IV"},
+    {"@type":"ListItem","position":18,"name":"Path of Exile"},
+    {"@type":"ListItem","position":19,"name":"Grim Dawn"},
+    {"@type":"ListItem","position":20,"name":"Last Epoch"},
+    {"@type":"ListItem","position":21,"name":"Torchlight Infinite"},
+    {"@type":"ListItem","position":22,"name":"Undecember"},
+    {"@type":"ListItem","position":23,"name":"Perfect World"},
+    {"@type":"ListItem","position":24,"name":"Aion"},
+    {"@type":"ListItem","position":25,"name":"TERA"},
+    {"@type":"ListItem","position":26,"name":"Blade & Soul"},
+    {"@type":"ListItem","position":27,"name":"ArcheAge"},
+    {"@type":"ListItem","position":28,"name":"Star Citizen"},
+    {"@type":"ListItem","position":29,"name":"EVE Online"},
+    {"@type":"ListItem","position":30,"name":"DC Universe Online"},
+    {"@type":"ListItem","position":31,"name":"Lord of the Rings Online"},
+    {"@type":"ListItem","position":32,"name":"Neverwinter"},
+    {"@type":"ListItem","position":33,"name":"Rift"},
+    {"@type":"ListItem","position":34,"name":"WildStar"},
+    {"@type":"ListItem","position":35,"name":"Wild Terra Online"},
+    {"@type":"ListItem","position":36,"name":"MIR4"},
+    {"@type":"ListItem","position":37,"name":"MIR M"},
+    {"@type":"ListItem","position":38,"name":"Ni no Kuni"},
+    {"@type":"ListItem","position":39,"name":"Palia"},
+    {"@type":"ListItem","position":40,"name":"Once Human"},
+    {"@type":"ListItem","position":41,"name":"Counter-Strike 2"},
+    {"@type":"ListItem","position":42,"name":"Valorant"},
+    {"@type":"ListItem","position":43,"name":"Overwatch 2"},
+    {"@type":"ListItem","position":44,"name":"Rainbow Six Siege"},
+    {"@type":"ListItem","position":45,"name":"Call of Duty: Warzone"},
+    {"@type":"ListItem","position":46,"name":"Apex Legends"},
+    {"@type":"ListItem","position":47,"name":"Battlefield 2042"},
+    {"@type":"ListItem","position":48,"name":"Destiny 2"},
+    {"@type":"ListItem","position":49,"name":"Halo Infinite"},
+    {"@type":"ListItem","position":50,"name":"Escape from Tarkov"},
+    {"@type":"ListItem","position":51,"name":"PUBG"},
+    {"@type":"ListItem","position":52,"name":"Team Fortress 2"},
+    {"@type":"ListItem","position":53,"name":"Paladins"},
+    {"@type":"ListItem","position":54,"name":"Warface"},
+    {"@type":"ListItem","position":55,"name":"Crossfire"},
+    {"@type":"ListItem","position":56,"name":"League of Legends"},
+    {"@type":"ListItem","position":57,"name":"Dota 2"},
+    {"@type":"ListItem","position":58,"name":"Mobile Legends"},
+    {"@type":"ListItem","position":59,"name":"Wild Rift"},
+    {"@type":"ListItem","position":60,"name":"Heroes of the Storm"},
+    {"@type":"ListItem","position":61,"name":"Smite"},
+    {"@type":"ListItem","position":62,"name":"Arena of Valor"},
+    {"@type":"ListItem","position":63,"name":"Pokémon UNITE"},
+    {"@type":"ListItem","position":64,"name":"Fortnite"},
+    {"@type":"ListItem","position":65,"name":"PUBG Mobile"},
+    {"@type":"ListItem","position":66,"name":"Free Fire"},
+    {"@type":"ListItem","position":67,"name":"Call of Duty Mobile"},
+    {"@type":"ListItem","position":68,"name":"Naraka: Bladepoint"},
+    {"@type":"ListItem","position":69,"name":"Super People"},
+    {"@type":"ListItem","position":70,"name":"Vampire: The Masquerade"},
+    {"@type":"ListItem","position":71,"name":"Minecraft"},
+    {"@type":"ListItem","position":72,"name":"Roblox"},
+    {"@type":"ListItem","position":73,"name":"Rust"},
+    {"@type":"ListItem","position":74,"name":"ARK: Survival"},
+    {"@type":"ListItem","position":75,"name":"DayZ"},
+    {"@type":"ListItem","position":76,"name":"7 Days to Die"},
+    {"@type":"ListItem","position":77,"name":"The Forest"},
+    {"@type":"ListItem","position":78,"name":"Valheim"},
+    {"@type":"ListItem","position":79,"name":"No Man's Sky"},
+    {"@type":"ListItem","position":80,"name":"Terraria"},
+    {"@type":"ListItem","position":81,"name":"Subnautica"},
+    {"@type":"ListItem","position":82,"name":"Raft"},
+    {"@type":"ListItem","position":83,"name":"Unturned"},
+    {"@type":"ListItem","position":84,"name":"Creativerse"},
+    {"@type":"ListItem","position":85,"name":"Clash of Clans"},
+    {"@type":"ListItem","position":86,"name":"Clash Royale"},
+    {"@type":"ListItem","position":87,"name":"Brawl Stars"},
+    {"@type":"ListItem","position":88,"name":"Coin Master"},
+    {"@type":"ListItem","position":89,"name":"Candy Crush"},
+    {"@type":"ListItem","position":90,"name":"Pokémon GO"},
+    {"@type":"ListItem","position":91,"name":"Raid: Shadow Legends"},
+    {"@type":"ListItem","position":92,"name":"AFK Arena"},
+    {"@type":"ListItem","position":93,"name":"State of Survival"},
+    {"@type":"ListItem","position":94,"name":"Lords Mobile"},
+    {"@type":"ListItem","position":95,"name":"Rise of Kingdoms"},
+    {"@type":"ListItem","position":96,"name":"Diablo Immortal"},
+    {"@type":"ListItem","position":97,"name":"Marvel Strike Force"},
+    {"@type":"ListItem","position":98,"name":"Summoners War"},
+    {"@type":"ListItem","position":99,"name":"Steam Wallet Codes"},
+    {"@type":"ListItem","position":100,"name":"PlayStation Store"},
+    {"@type":"ListItem","position":101,"name":"Xbox Live Gold"},
+    {"@type":"ListItem","position":102,"name":"Nintendo eShop"},
+    {"@type":"ListItem","position":103,"name":"Google Play"},
+    {"@type":"ListItem","position":104,"name":"Apple App Store"},
+    {"@type":"ListItem","position":105,"name":"Amazon Gift Cards"},
+    {"@type":"ListItem","position":106,"name":"Netflix Codes"},
+    {"@type":"ListItem","position":107,"name":"Spotify Premium"},
+    {"@type":"ListItem","position":108,"name":"Discord Nitro"},
+    {"@type":"ListItem","position":109,"name":"Twitch Prime"},
+    {"@type":"ListItem","position":110,"name":"Epic Games"}
   ]
 }
 </script>
@@ -474,9 +679,39 @@
     opacity: 0.4;
     animation: border-glow 3s linear infinite;
   }
+
+  /* SEO keyword cloud */
+  .kw-tag {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid rgba(255,107,26,0.35);
+    border-radius: 9999px;
+    color: #9ca3af;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    transition: all 0.3s;
+  }
+  .kw-tag:hover {
+    color: #ffd700;
+    border-color: #ff6b1a;
+  }
 </style>
 </head>
 <body class="stone-bg">
+
+<!-- Crawlable fallback: visible only without JavaScript. Lets search engines and AI assistants (GPTBot, ClaudeBot, PerplexityBot, Gemini) read the full catalog without executing JS -->
+<noscript>
+  <div style="max-width:900px;margin:0 auto;padding:40px 20px;background:#111;color:#eee;font-family:sans-serif;line-height:1.7;">
+    <h1 style="color:#ffd700;">Damacolshop - Game Accounts, Currencies &amp; Codes | MMORPG Marketplace</h1>
+    <p><strong>Damacolshop (damacol.shop)</strong> is a digital marketplace founded in 2020, specialized in selling game accounts, in-game currencies, codes and keys for 100+ games worldwide. Verified seller on EpicNPC, Elitepvpers and Sythe. Rated 4.9/5 on Trustpilot. Instant delivery, 24-hour replacement guarantee, 24/7 Discord support (user: damacol).</p>
+    <h2 style="color:#ffd700;">Games we buy &amp; sell</h2>
+    <p>World of Warcraft, Final Fantasy XIV, Lineage 2, Lost Ark, Black Desert Online, Guild Wars 2, Elder Scrolls Online, Star Wars TOR, Albion Online, RuneScape, New World, Throne and Liberty, Tower of Fantasy, Genshin Impact, Honkai Star Rail, Wuthering Waves, Diablo IV, Path of Exile, Grim Dawn, Last Epoch, Torchlight Infinite, Undecember, Perfect World, Aion, TERA, Blade &amp; Soul, ArcheAge, Star Citizen, EVE Online, DC Universe Online, Lord of the Rings Online, Neverwinter, Rift, WildStar, Wild Terra Online, MIR4, MIR M, Ni no Kuni, Palia, Once Human, Counter-Strike 2, Valorant, Overwatch 2, Rainbow Six Siege, Call of Duty: Warzone, Apex Legends, Battlefield 2042, Destiny 2, Halo Infinite, Escape from Tarkov, PUBG, Team Fortress 2, Paladins, Warface, Crossfire, League of Legends, Dota 2, Mobile Legends, Wild Rift, Heroes of the Storm, Smite, Arena of Valor, Pokémon UNITE, Fortnite, PUBG Mobile, Free Fire, Call of Duty Mobile, Naraka: Bladepoint, Super People, Vampire: The Masquerade, Minecraft, Roblox, Rust, ARK: Survival, DayZ, 7 Days to Die, The Forest, Valheim, No Man's Sky, Terraria, Subnautica, Raft, Unturned, Creativerse, Clash of Clans, Clash Royale, Brawl Stars, Coin Master, Candy Crush, Pokémon GO, Raid: Shadow Legends, AFK Arena, State of Survival, Lords Mobile, Rise of Kingdoms, Diablo Immortal, Marvel Strike Force, Summoners War, Steam Wallet Codes, PlayStation Store, Xbox Live Gold, Nintendo eShop, Google Play, Apple App Store, Amazon Gift Cards, Netflix Codes, Spotify Premium, Discord Nitro, Twitch Prime, Epic Games.</p>
+    <h2 style="color:#ffd700;">Services</h2>
+    <p>Premium accounts, coins &amp; gold (WoW gold, FFXIV gil, Lost Ark gold, Lineage 2 adena, Albion silver, OSRS GP, EVE ISK), codes &amp; keys, boosting services.</p>
+    <h2 style="color:#ffd700;">Contact</h2>
+    <p>Discord: <strong>damacol</strong> | Server: <a href="https://discord.gg/fJj2DYk27t">discord.gg/fJj2DYk27t</a> | Web: <a href="https://damacol.shop">damacol.shop</a> | EpicNPC: <a href="https://www.epicnpc.com/members/damac0l.2170636/">damac0l</a> | Elitepvpers: <a href="https://www.elitepvpers.com/forum/members/9096042-damac0l.html">damac0l</a> | Sythe: <a href="https://www.sythe.org/members/damacol.2098650/">damacol</a></p>
+  </div>
+</noscript>
 
 <div id="particles" class="fixed inset-0 pointer-events-none z-0"></div>
 
@@ -520,9 +755,9 @@
   <div class="relative z-10 max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
     <div class="lg:col-span-3 flex justify-center">
       <img src="https://image.qwenlm.ai/public_source/0e3ea7eb-4263-468c-9e29-9db09ee5db1a/187774a83-ed6a-445e-a8ad-b23dcf8287a9.png" 
-           alt="Damacolshop Demon Mascot" 
+           alt="Damacolshop Demon Mascot - MMORPG game accounts marketplace" 
            class="hero-demon w-56 md:w-72 lg:w-80 rounded-lg"
-           loading="eager">
+           loading="eager" fetchpriority="high" decoding="async">
     </div>
 
     <div class="lg:col-span-6 text-center">
@@ -544,9 +779,9 @@
 
     <div class="lg:col-span-3 flex justify-center">
       <img src="https://image.qwenlm.ai/public_source/0e3ea7eb-4263-468c-9e29-9db09ee5db1a/1b2b0b317-c885-4bff-8ed1-0cf9441d8dc1.png" 
-           alt="Damacolshop Crystal Currency" 
+           alt="Blue crystal - in-game currency gold gil adena for MMORPG games" 
            class="hero-crystal w-56 md:w-72 lg:w-80 rounded-lg"
-           loading="eager">
+           loading="eager" fetchpriority="high" decoding="async">
     </div>
   </div>
 
@@ -650,6 +885,54 @@
         <div class="text-3xl font-bold text-white mb-1">Sythe</div>
         <div class="text-xs text-gray-500" data-i18n="trust_verified">Verified</div>
       </a>
+    </div>
+  </div>
+</section>
+
+<!-- About / SEO entity section: crawlable facts for Google & AI assistants -->
+<section id="about" class="relative z-10 py-16">
+  <div class="max-w-5xl mx-auto px-4 text-center">
+    <h2 class="font-cinzel text-3xl md:text-4xl font-bold text-silver mb-6">
+      ABOUT <span class="text-gold">DAMACOLSHOP</span>
+    </h2>
+    <p class="text-gray-300 leading-relaxed mb-4">
+      <strong class="text-white">Damacolshop</strong> (damacol.shop) is a digital marketplace founded in 2020, specialized in the sale of
+      <strong class="text-white">game accounts, in-game currencies, codes and keys</strong> for more than 100 MMORPG, FPS, MOBA, Battle Royale and mobile games,
+      including World of Warcraft, Final Fantasy XIV, Lineage 2, Lost Ark, Albion Online, RuneScape, Genshin Impact, Diablo IV, Path of Exile, Fortnite, Valorant and League of Legends.
+    </p>
+    <p class="text-gray-400 leading-relaxed mb-8">
+      Verified seller on <a href="https://www.epicnpc.com/members/damac0l.2170636/" target="_blank" rel="noopener" class="text-orange-500 hover:text-yellow-400">EpicNPC (damac0l)</a>,
+      <a href="https://www.elitepvpers.com/forum/members/9096042-damac0l.html" target="_blank" rel="noopener" class="text-orange-500 hover:text-yellow-400">Elitepvpers (damac0l)</a> and
+      <a href="https://www.sythe.org/members/damacol.2098650/" target="_blank" rel="noopener" class="text-orange-500 hover:text-yellow-400">Sythe (damacol)</a>,
+      rated 4.9/5 on Trustpilot, with instant delivery in under 5 minutes, a 24-hour replacement guarantee and 24/7 support on Discord (user: <strong class="text-orange-500">damacol</strong>).
+      We sell WoW gold, FFXIV gil, Lost Ark gold, Lineage 2 adena, Albion silver, OSRS GP, EVE ISK, Steam wallet codes, PSN gift cards, and boosting services worldwide.
+    </p>
+    <h3 class="font-cinzel text-xl font-bold text-gold mb-4">POPULAR SEARCHES</h3>
+    <div class="flex flex-wrap justify-center gap-2">
+      <span class="kw-tag">buy wow gold</span>
+      <span class="kw-tag">ffxiv gil cheap</span>
+      <span class="kw-tag">lineage 2 adena</span>
+      <span class="kw-tag">lost ark gold</span>
+      <span class="kw-tag">albion online silver</span>
+      <span class="kw-tag">osrs gp</span>
+      <span class="kw-tag">eve online isk</span>
+      <span class="kw-tag">genshin impact account</span>
+      <span class="kw-tag">diablo 4 gold</span>
+      <span class="kw-tag">path of exile divine orbs</span>
+      <span class="kw-tag">fortnite og skins account</span>
+      <span class="kw-tag">valorant ranked account</span>
+      <span class="kw-tag">lol smurf account</span>
+      <span class="kw-tag">cs2 skins account</span>
+      <span class="kw-tag">minecraft account</span>
+      <span class="kw-tag">roblox account</span>
+      <span class="kw-tag">clash of clans th15 account</span>
+      <span class="kw-tag">steam wallet codes</span>
+      <span class="kw-tag">psn gift cards</span>
+      <span class="kw-tag">xbox game pass codes</span>
+      <span class="kw-tag">discord nitro cheap</span>
+      <span class="kw-tag">mmorpg boosting</span>
+      <span class="kw-tag">buy game accounts</span>
+      <span class="kw-tag">sell game accounts</span>
     </div>
   </div>
 </section>
