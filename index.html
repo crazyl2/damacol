@@ -31,7 +31,8 @@
 <meta property="og:url" content="https://damacol.shop/">
 <meta property="og:title" content="Damacolshop - Game Accounts, Currencies & Codes">
 <meta property="og:description" content="Buy game accounts, currencies and codes for 100+ MMORPGs. Instant delivery, trusted seller on EpicNPC, Trustpilot, Elitepvpers and Sythe.">
-<meta property="og:image" content="https://damacol.shop/og-image.jpg">
+<meta property="og:image" content="https://image.qwenlm.ai/public_source/0e3ea7eb-4263-468c-9e29-9db09ee5db1a/187774a83-ed6a-445e-a8ad-b23dcf8287a9.png">
+<meta property="og:image:alt" content="Damacolshop - MMORPG game accounts, currencies and codes marketplace">
 <meta property="og:site_name" content="Damacolshop">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="es_ES">
@@ -40,7 +41,7 @@
 <meta name="twitter:url" content="https://damacol.shop/">
 <meta name="twitter:title" content="Damacolshop - Game Accounts, Currencies & Codes">
 <meta name="twitter:description" content="Buy game accounts, currencies and codes for 100+ MMORPGs. Instant delivery, trusted seller.">
-<meta name="twitter:image" content="https://damacol.shop/twitter-image.jpg">
+<meta name="twitter:image" content="https://image.qwenlm.ai/public_source/0e3ea7eb-4263-468c-9e29-9db09ee5db1a/187774a83-ed6a-445e-a8ad-b23dcf8287a9.png">
 
 <!-- ===== ADVANCED SEO: Performance (Core Web Vitals), Sitemap & Verification ===== -->
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -48,9 +49,8 @@
 <link rel="preload" as="image" fetchpriority="high" href="https://image.qwenlm.ai/public_source/0e3ea7eb-4263-468c-9e29-9db09ee5db1a/187774a83-ed6a-445e-a8ad-b23dcf8287a9.png">
 <link rel="preload" as="image" fetchpriority="high" href="https://image.qwenlm.ai/public_source/0e3ea7eb-4263-468c-9e29-9db09ee5db1a/1b2b0b317-c885-4bff-8ed1-0cf9441d8dc1.png">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://damacol.shop/sitemap.xml">
-<!-- SEO VERIFICATION: Google Search Console verificado. Bing: pega aquí tu token cuando lo tengas en Bing Webmaster Tools -->
+<!-- SEO VERIFICATION: Google Search Console verificado. Bing: verificado por import desde GSC (no requiere meta tag) -->
 <meta name="google-site-verification" content="VvTOar7fsefkWpkUpyhYgD8bF7_-cO5_mouKDzFqgUM" />
-<meta name="msvalidate.01" content="PASTE_BING_TOKEN_HERE">
 
 <script type="application/ld+json">
 {
@@ -59,7 +59,8 @@
   "@id": "https://damacol.shop/#store",
   "name": "Damacolshop",
   "url": "https://damacol.shop",
-  "logo": "https://damacol.shop/logo.png",
+  "logo": "https://image.qwenlm.ai/public_source/0e3ea7eb-4263-468c-9e29-9db09ee5db1a/187774a83-ed6a-445e-a8ad-b23dcf8287a9.png",
+  "image": "https://image.qwenlm.ai/public_source/0e3ea7eb-4263-468c-9e29-9db09ee5db1a/187774a83-ed6a-445e-a8ad-b23dcf8287a9.png",
   "description": "Marketplace for game accounts, currencies and codes for MMORPGs, FPS, MOBA and more.",
   "foundingDate": "2020",
   "slogan": "Game ACC - Currencys",
@@ -93,7 +94,8 @@
   "@id": "https://damacol.shop/#organization",
   "name": "Damacolshop",
   "url": "https://damacol.shop",
-  "logo": "https://damacol.shop/logo.png",
+  "logo": "https://image.qwenlm.ai/public_source/0e3ea7eb-4263-468c-9e29-9db09ee5db1a/187774a83-ed6a-445e-a8ad-b23dcf8287a9.png",
+  "image": "https://image.qwenlm.ai/public_source/0e3ea7eb-4263-468c-9e29-9db09ee5db1a/187774a83-ed6a-445e-a8ad-b23dcf8287a9.png",
   "foundingDate": "2020",
   "slogan": "Game ACC - Currencys",
   "sameAs": [
@@ -1628,6 +1630,12 @@ function setLanguage(lang) {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
   localStorage.setItem('preferredLang', lang);
+  // Keep the URL in sync with the active language (hreflang coherence: damacol.shop/?lang=es)
+  try {
+    const url = new URL(window.location.href);
+    if (lang === 'es') { url.searchParams.set('lang', 'es'); } else { url.searchParams.delete('lang'); }
+    window.history.replaceState(null, '', url.toString());
+  } catch (err) {}
 }
 
 document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -1948,7 +1956,9 @@ function createParticles() {
 
 createParticles();
 
-const savedLang = localStorage.getItem('preferredLang');
+// Language bootstrap: ?lang=xx in the URL (hreflang target) takes priority over localStorage
+const urlLang = new URLSearchParams(window.location.search).get('lang');
+const savedLang = (urlLang && translations[urlLang]) ? urlLang : localStorage.getItem('preferredLang');
 if (savedLang && translations[savedLang]) {
   setLanguage(savedLang);
 } else {
